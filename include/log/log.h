@@ -41,6 +41,10 @@
 extern "C" {
 #endif
 
+#ifdef AMAZON_LOG
+int lab126_log_write(int bufID, int prio, const char *tag, const char *fmt, ...);
+#endif //AMAZON_LOG
+
 // ---------------------------------------------------------------------
 
 /*
